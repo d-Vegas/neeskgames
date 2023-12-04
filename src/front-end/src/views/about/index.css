@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+#img {
+    width: 110px;
+    border-radius: 50%;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(123, 21, 159);
+    background: linear-gradient(153deg, rgba(123, 21, 159, 1) 0%, rgba(5, 3, 100, 1) 35%);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.test {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.test .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.test .textBox h2 {
+    color: #ffffff;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.test .textBox h2 span {
+    color: #cf059d;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.test .textBox p {
+    color: #ffffff;
+}
+
+.test .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #cf059d;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.test .imgBox {
+    display: flex;
+}
+
+.test .imgBox img {
+    height: 650px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.thumb li :hover{
+    transform: scale(1.5);
+}
+
+.thumb li img{
+    max-width: 60px;
+}

@@ -1,0 +1,16 @@
+.sidebar {
+    background-color: var(--sidebar-color);
+}
+
+.content {
+    background-color: var(--body-color);
+}
+
+.card-game .card-body{
+    height: 180px;
+    background-color: rgb(160, 160, 160);
+}
+
+.card-game .card-body:hover {
+    background-color: rgb(121, 121, 121);
+}
