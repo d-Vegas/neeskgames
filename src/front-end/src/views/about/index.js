@@ -17,8 +17,8 @@ export default function () {
 				<nav className="navbar px-3">
 					<img src={rabbit} class="bd-placeholder-img rounded-circle" width="60" height="60" alt="Logo" />
 					<ul className="nav">
-						<li className="nav-item mx-2 text-white"><a href="./index.html" className="dropdown-item">Login</a></li>
-						<li className="nav-item mx-2 text-white"><a href="./cadastro.html" className="dropdown-item">Cadastre-se</a></li>
+						<li className="nav-item mx-2 text-white"><a href="./login" className="dropdown-item">Login</a></li>
+						<li className="nav-item mx-2 text-white"><a href="./cadastro" className="dropdown-item">Cadastre-se</a></li>
 					</ul>
 				</nav>
 			</header>
