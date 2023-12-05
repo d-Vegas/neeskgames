@@ -13,33 +13,35 @@ export default function () {
 
 	return (
 		<section>
-			<header className='row'>
-				<a href="#">
-					<img id="img" src={rabbit} className="logo" alt="Logo" />
-					<ul className="navlist">
-						<li className="nav"><a href="./index.html">Login</a></li>
-						<li className="nav"><a href="./cadastro.html">Cadastre-se</a></li>
+			<header>
+				<nav className="navbar px-3">
+					<img src={rabbit} class="bd-placeholder-img rounded-circle" width="60" height="60" alt="Logo" />
+					<ul className="nav">
+						<li className="nav-item mx-2 text-white"><a href="./index.html" className="dropdown-item">Login</a></li>
+						<li className="nav-item mx-2 text-white"><a href="./cadastro.html" className="dropdown-item">Cadastre-se</a></li>
 					</ul>
-				</a>
+				</nav>
 			</header>
-			<div className="test">
-				<div className="textBox">
-					<h2>
-						Bem-Vindo ao <span>NeskGames</span>
-					</h2>
-					<p>Salve seus jogos favoritos na nossa biblioteca, venha fazer parte da nossa comunidade!</p>
-					<a href="./cadastro">Cadastre-se</a>
-				</div>
-				<div className="imgBox">
-					<img src={games} alt="Game" />
+			<div className="container p-5">
+				<div className="row">
+					<div className="col-md-6 mt-5 letreiro">
+						<h2>Bem-Vindo ao <span>NeskGames</span></h2>
+						<p className="text-white mb-5">Salve seus jogos favoritos na nossa biblioteca, venha fazer parte da nossa comunidade!</p>
+						<a href="./cadastro" className="my-5">Cadastre-se</a>
+					</div>
+					<div className="col-md-6 mt-5">
+						<img src={games} alt="Game" className="img-fluid" />
+					</div>
 				</div>
 			</div>
-			<ul className="thumb">
-				<li><img src={xbox} className="icon" alt="Xbox" /></li>
-				<li><img src={steam} className="icon_2" alt="Steam" /></li>
-				<li><img src={epic} className="icon" alt="Epic Games" /></li>
-				<li><img src={psn} className="icon" alt="PSN" /></li>
-			</ul>
+			<div className="d-flex justify-content-center pb-3">
+				<ul className="nav mb-3 thumb">
+					<li className="nav-item mx-3"><img src={xbox} alt="Xbox" width="40" height="40"/></li>
+					<li className="nav-item mx-3"><img src={steam} alt="Steam" width="40" height="40"/></li>
+					<li className="nav-item mx-3"><img src={epic} alt="Epic Games" width="40" height="40"/></li>
+					<li className="nav-item mx-3"><img src={psn} alt="PSN" width="40" height="40"/></li>
+				</ul>
+			</div>
 		</section>
 	)
 }
